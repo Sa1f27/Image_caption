@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Captioning Result</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #2c3e50, #34495e); /* Dark gradient background */
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ecf0f1; /* Light text color */
+        }
+        .content {
+            text-align: center;
+            background: #2c3e50; /* Dark background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 90%;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 5px solid #3498db; /* Blue border */
+        }
+        h1 {
+            color: #3498db; /* Blue color */
+            font-weight: bold;
+        }
+        p.lead {
+            color: #ecf0f1; /* Light text color */
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Generated Caption</h1>
+        <p class="lead">{{ caption }}</p>
+        <img src="{{ url_for('static', filename='uploads/' + image_path.split('/')[-1]) }}" alt="Uploaded Image">
+    </div>
+</body>
+</html>
