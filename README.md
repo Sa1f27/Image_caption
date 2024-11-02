@@ -10,7 +10,7 @@ This app uses a Vision Transformer (ViT) with GPT-2 to generate captions for ima
 
 1. **Clone Repository**:
    ```
-   git clone <repo-url>
+   git clone [<repo-url>](https://github.com/Sa1f27/Image_caption.git)
    cd <repo-directory>
    ```
 
