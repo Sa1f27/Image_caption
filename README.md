@@ -40,7 +40,3 @@ This app uses a Vision Transformer (ViT) with GPT-2 to generate captions for ima
 - `app.py`: Main Flask application code
 - `uploads.html`: Upload page template
 - `result.html`: Result page template displaying the caption and image
-
-## Model Details
-Uses the [VisionEncoderDecoderModel](https://huggingface.co/nlpconnect/vit-gpt2-image-captioning) from Hugging Face's Transformers library.
-```
